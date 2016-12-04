@@ -1,0 +1,23 @@
+body {
+  font-size: 25px;
+  font-family: "helvetica", arial;
+}
+ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.bounce {
+  display: inline-block;
+  animation: bounce .5s  infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px)
+  }
+  to{
+    transform: translateY(-10px);
+  }
+}
