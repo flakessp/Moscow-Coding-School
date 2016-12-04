@@ -1,0 +1,26 @@
+
+.square {
+  display: inline-block;
+  animation: shimmy 2s infinite;
+
+  /* можешь возвращать анимацию обратно */
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

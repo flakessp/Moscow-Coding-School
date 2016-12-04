@@ -1,0 +1,41 @@
+#nav li a {
+  color: #900;
+  text-decoration: none;
+  /*padding: 3px 0;*/
+  display: block;
+}
+
+
+
+@media all and (max-width: 699px) and (min-width: 520px) {
+  #nav li a {
+    padding-left: 21px;
+    background: url(../images/email.png) left center no-repeat;
+  }
+}
+
+@media all and (min-width: 700px) and (max-width: 1000px) {
+  #nav li a:before {
+    content: "Email: ";
+    font-style: italic;
+    color: #666;
+  }
+}
+
+
+
+a {
+  position: relative;
+  padding-left: 33px;
+  /*указываем отступ равный ширине иконки*/
+}
+a:hover:before {
+  /* если размер иконки неизвестен*/
+  content:'';
+  position: absolute;
+  left: 0;
+  background: url(envelope.svg) center center no-repeat;
+  background-size: contain;
+  height: 16px;
+  width: 33px;
+}

@@ -1,0 +1,44 @@
+p {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: red;
+  /*animation-duration: 3s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;*/
+  animation: slidein 10s forwards;
+  /*transition: all 3s ease-in;*/
+  animation-timing-function: ease-in-out;;
+}
+
+/*@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}*/
+
+@keyframes slidein {
+  0% {
+    right: 0;
+    top: 0;
+  }
+  50% {
+    right: 90%;
+    top: 0;
+
+    transform: translate3d(12px, 50%, 3em);
+
+  }
+
+  100% {
+    right: 90%;
+    top: 90%;
+    transform: rotate(90deg);
+  }
+}
